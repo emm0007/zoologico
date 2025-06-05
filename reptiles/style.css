@@ -1,0 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7fef5;
+    color: #333;
+    line-height: 1.6;
+}
+
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ENCABEZADO */
+#encabezado {
+    background: linear-gradient(90deg, #558b2f, #aed581);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#encabezado img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* MENÚ */
+#menu {
+    background-color: #689f38;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #dcedc8;
+}
+
+/* CONTENIDO */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ASIDE IZQUIERDO */
+#izquierda {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f1f8e9;
+    padding: 20px;
+}
+
+#izquierda img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#izquierda h5 {
+    margin-bottom: 10px;
+}
+
+#izquierda h5 a {
+    text-decoration: none;
+    color: #33691e;
+    font-weight: bold;
+}
+
+#izquierda h5 a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN PRINCIPAL */
+#derecha {
+    flex: 3;
+    min-width: 300px;
+    padding: 30px;
+}
+
+#derecha img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* PIE DE PÁGINA */
+#piepagina {
+    background-color: #558b2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #encabezado img {
+        position: static;
+        margin-top: 10px;
+    }
+}

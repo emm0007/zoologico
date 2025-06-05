@@ -1,0 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    line-height: 1.6;
+}
+
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ENCABEZADO */
+#encabezado {
+    background: linear-gradient(90deg, #66bb6a, #a5d6a7);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#encabezado img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* MENÚ */
+#menu {
+    background-color: #388e3c;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #c8e6c9;
+}
+
+/* CONTENIDO */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ASIDE */
+#izquierda {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f1f8e9;
+    padding: 20px;
+}
+
+#izquierda img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#izquierda p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* SECCIÓN PRINCIPAL */
+#derecha {
+    flex: 3;
+    min-width: 300px;
+    padding: 30px;
+}
+
+#derecha img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+#piepagina {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #encabezado img {
+        position: static;
+        margin-top: 10px;
+    }
+}

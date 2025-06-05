@@ -1,0 +1,155 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f9f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO */
+#encabezado {
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#encabezado img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* MENÚ */
+#menu {
+    background-color: #66bb6a;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #dcedc8;
+}
+
+/* LAYOUT PRINCIPAL */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ASIDE IZQUIERDO */
+#izquierda {
+    flex: 1;
+    min-width: 250px;
+    background-color: #e8f5e9;
+    padding: 20px;
+}
+
+#izquierda img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#izquierda h5 {
+    margin-bottom: 10px;
+}
+
+#izquierda h5 a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+#izquierda h5 a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN DERECHA */
+#derecha {
+    flex: 3;
+    min-width: 300px;
+    padding: 30px;
+}
+
+#derecha img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* PIE DE PÁGINA */
+#piepagina {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ESTILO ADICIONAL PARA LA PÁGINA DE MAMÍFEROS */
+body.mamiferos {
+    background-color: #fffef4;
+}
+
+body.mamiferos #encabezado {
+    background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+}
+
+body.mamiferos #menu {
+    background-color: #8e24aa;
+}
+
+body.mamiferos #menu a:hover {
+    color: #f3e5f5;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #encabezado img {
+        position: static;
+        margin-top: 10px;
+    }
+
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #izquierda, #derecha {
+        padding: 20px;
+    }
+}
